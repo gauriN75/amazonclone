@@ -32,7 +32,7 @@ export const cartSlice = createSlice({
       );
       // remove the quantity from product number
       state.productsNumber = state.productsNumber - productToRemove.quantity;
-      // find index of the product removing
+      // find index of product removing
       const index = state.products.findIndex(
         (product) => product.id === action.payload
       );
